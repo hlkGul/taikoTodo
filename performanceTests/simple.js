@@ -16,7 +16,8 @@ export default function() {
 
   let res = http.get(`http://todomvc.com/examples/vue/`);
   let success = check(res, {
-    "status is 200": r => r.status === 200
+    "status is 200": r => r.status === 200,
+    "text verification" : r => r.body.includes("buy some milk")
   });
   if (!success) {
     ErrorCount.add(1);
@@ -24,3 +25,4 @@ export default function() {
 
   sleep(2);
 }
+
