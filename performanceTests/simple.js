@@ -14,7 +14,7 @@ export const options = {
 
 export default function() {
 
-  let res = http.get(`https://todomvc.com/examples/vue/`);
+  let res = http.get(`http://todomvc.com/examples/vue/`);
   let success = check(res, {
     "status is 200": r => r.status === 200
   });
