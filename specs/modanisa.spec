@@ -1,4 +1,4 @@
-# To do vue application acceptance tests
+# Vue.js -> To do application acceptance tests
 
 To execute this specification, use
 	npm test
@@ -24,7 +24,7 @@ Background;
 * Add task "buy some milk"
 * Click check box near to "buy some milk"
 * Click check box near to "buy some milk"
-* To do "todo" is undone
+* To do "buy some milk" is undone
 
 ## Delete item and empty list
 * Add task "rest for a while"

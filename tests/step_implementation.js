@@ -74,7 +74,7 @@ step("To do <todo> is checked",async(todo)=>{
 })
 step("To do <todo> is undone",async(todo)=>{
     //class:todo oldugunda yapilan kontrol
-    assert.ok(await $(`//li[@class='todo']//div[@class='view']/label[text()='buy some milk']`).exists())
+    assert.ok(await $(`//li[@class='todo']//div[@class='view']/label[text()='${todo}']`).exists())
 })
 
 step("Delete <item> in to do list",async(item)=>{
